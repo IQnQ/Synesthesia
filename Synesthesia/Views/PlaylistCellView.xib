@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="141" id="5bR-hu-h2Q" customClass="PlaylistCellView" customModule="Synesthesia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5bR-hu-h2Q" id="xRo-sz-dPy">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dvt-1B-elW">
+                        <rect key="frame" x="16" y="10.5" width="100" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="fYg-Q8-wGL"/>
+                            <constraint firstAttribute="height" constant="120" id="jsg-xj-tyX"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kES-aG-aBr">
+                        <rect key="frame" x="126" y="42.5" width="150" height="56"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlit Title" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQE-zK-zzP">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="2nu-bc-SPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Plalist Author Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0V-VL-gBZ">
+                                <rect key="frame" x="0.0" y="38" width="150" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="kES-aG-aBr" firstAttribute="leading" secondItem="Dvt-1B-elW" secondAttribute="trailing" constant="10" id="7aR-B4-lpO"/>
+                    <constraint firstItem="Dvt-1B-elW" firstAttribute="centerY" secondItem="kES-aG-aBr" secondAttribute="centerY" id="Ekh-vH-IBM"/>
+                    <constraint firstItem="Dvt-1B-elW" firstAttribute="leading" secondItem="xRo-sz-dPy" secondAttribute="leadingMargin" id="FfV-Nr-kkA"/>
+                    <constraint firstItem="kES-aG-aBr" firstAttribute="top" secondItem="xRo-sz-dPy" secondAttribute="topMargin" constant="31" id="Mez-nh-nnR"/>
+                    <constraint firstItem="Dvt-1B-elW" firstAttribute="top" secondItem="xRo-sz-dPy" secondAttribute="topMargin" constant="-1" id="QJ5-eU-Y4k"/>
+                    <constraint firstItem="Dvt-1B-elW" firstAttribute="centerY" secondItem="xRo-sz-dPy" secondAttribute="centerY" id="fTm-KF-OMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playlistAuthorLabel" destination="q0V-VL-gBZ" id="BkN-c4-bg0"/>
+                <outlet property="playlistImage" destination="Dvt-1B-elW" id="v71-2m-7vR"/>
+                <outlet property="playlistTitleLabel" destination="rQE-zK-zzP" id="hTz-5H-oJ6"/>
+            </connections>
+            <point key="canvasLocation" x="275.19999999999999" y="102.09895052473765"/>
+        </tableViewCell>
+    </objects>
+</document>
