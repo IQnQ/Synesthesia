@@ -1,4 +1,4 @@
-<h1>Synesthesia<h1/>
+<h1>Synesthesia</ h1>
 
 Minimalist dark mode music player.
 Organise your music library whether it's your own mp3 songs or streamed through Apple Music.
